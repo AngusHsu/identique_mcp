@@ -32,12 +32,12 @@ You can run the MCP server directly from the repository using uv:
 
 ```bash
 # Run the server directly
-uv run --with git+https://github.com/AngusHsu/identique_mcp.git identique-mcp
+uv run --with git+https://github.com/AngusHsu/identique_mcp.git identique_mcp
 
 # Or clone and run locally
 git clone https://github.com/AngusHsu/identique_mcp.git
 cd identique_mcp
-uv run identique-mcp
+uv run identique_mcp
 ```
 
 ### Using pip
@@ -47,7 +47,7 @@ uv run identique-mcp
 pip install git+https://github.com/AngusHsu/identique_mcp.git
 
 # Run the server
-identique-mcp
+identique_mcp
 ```
 
 ### Development Setup
@@ -56,7 +56,7 @@ identique-mcp
 git clone https://github.com/AngusHsu/identique_mcp.git
 cd identique_mcp
 uv sync
-uv run identique-mcp
+uv run identique_mcp
 ```
 
 ## MCP Client Configuration
@@ -76,7 +76,7 @@ Add to your `claude_desktop_config.json`:
         "run",
         "--with",
         "git+https://github.com/AngusHsu/identique_mcp.git",
-        "identique-mcp"
+        "identique_mcp"
       ]
     }
   }
@@ -89,7 +89,7 @@ Or if you have it installed locally:
 {
   "mcpServers": {
     "identique": {
-      "command": "identique-mcp"
+      "command": "identique_mcp"
     }
   }
 }
