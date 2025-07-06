@@ -364,5 +364,10 @@ def get_country_id_format(country_code: str) -> Dict[str, Any]:
     return format_info
 
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the MCP server"""
     mcp.run(transport="stdio")
+
+
+if __name__ == "__main__":
+    main()
