@@ -1,10 +1,36 @@
 [project]
-name = "idnumbers-mcp"
+name = "identique-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server for validating and extracting information from national ID numbers worldwide"
 readme = "README.md"
 requires-python = ">=3.13"
+authors = [
+    {name = "Angus Hsu", email = "angus@example.com"}
+]
+keywords = ["mcp", "id-validation", "national-id", "identity"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+]
 dependencies = [
     "fastmcp>=2.8.0",
     "idnumbers>=1.11.0",
 ]
+
+[project.urls]
+"Homepage" = "https://github.com/AngusHsu/identique_mcp"
+"Bug Reports" = "https://github.com/AngusHsu/identique_mcp/issues"
+"Source" = "https://github.com/AngusHsu/identique_mcp"
+
+[project.scripts]
+identique-mcp = "idnumbers_mcp_server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = []
