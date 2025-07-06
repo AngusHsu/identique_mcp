@@ -1,11 +1,11 @@
 [project]
-name = "identique-mcp"
+name = "identique_mcp"
 version = "0.1.0"
 description = "MCP server for validating and extracting information from national ID numbers worldwide"
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
-    {name = "Angus Hsu", email = "angus@example.com"}
+    {name = "Angus Hsu", email = "apangus611@gmail.com"}
 ]
 keywords = ["mcp", "id-validation", "national-id", "identity"]
 classifiers = [
@@ -26,7 +26,7 @@ dependencies = [
 "Source" = "https://github.com/AngusHsu/identique_mcp"
 
 [project.scripts]
-identique-mcp = "identique_mcp.server:main"
+identique_mcp = "identique_mcp.server:main"
 
 [build-system]
 requires = ["hatchling"]
