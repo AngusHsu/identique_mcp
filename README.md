@@ -83,18 +83,6 @@ Add to your `claude_desktop_config.json`:
 }
 ```
 
-Or if you have it installed locally:
-
-```json
-{
-  "mcpServers": {
-    "identique": {
-      "command": "identique_mcp"
-    }
-  }
-}
-```
-
 ## Available Tools
 
 ### 1. `list_supported_countries`
@@ -214,6 +202,6 @@ If you encounter issues:
 
 ## Related Projects
 
-- [IDNumbers](https://github.com/microdrop/idnumbers) - The underlying validation library
+- [IDNumbers](https://github.com/Identique/idnumbers) - The underlying validation library
 - [FastMCP](https://github.com/jlowin/fastmcp) - MCP server framework
 - [Model Context Protocol](https://modelcontextprotocol.io/) - MCP specification
